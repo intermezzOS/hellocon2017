@@ -1,0 +1,482 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <title>the ag_deck</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="public/skeleton.css" type="text/css" rel="stylesheet">
+    <link href="public/custom.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <textarea id="source">
+
+class: middle, center
+
+![rhizome](public/img/rhizome.jpg)
+# .title[intermezz]<strong>OS</strong>
+## .subtitle[a teaching operating system]
+
+---
+class: middle, center
+
+# hi, i'm <strong>@ag_dubs</strong>
+
+---
+class: middle, center
+
+![npm logo](public/img/npm_logo.png)
+
+---
+class: middle, center
+
+![node](public/img/nodejs.png)
+
+---
+class: middle, center
+
+![javascript](public/img/javascript.jpg)
+
+---
+class: middle, center
+
+![ruby](public/img/ruby.png)
+
+---
+class: middle, center
+
+![erlang](public/img/erlang.svg)
+
+---
+class: middle, left
+
+# i really <strong>love</strong> .highlight[programming languages]
+
+---
+class: middle, left
+
+# i really like <strong>thinking about thinking</strong>
+
+--
+
+# especially the type of thinking that happens .highlight[when people write code]
+
+---
+class: middle, center
+
+![rhizome](public/img/rhizome.jpg)
+# .title[intermezz]<strong>OS</strong>
+## .subtitle[a teaching operating system]
+
+---
+class: middle, top
+
+### intermezzOS is...
+## a teaching operating system, specifically focused on <strong>introducing systems programming concepts</strong> to experienced developers from other areas of programming.
+
+---
+class: middle, center
+
+![steve avatar](public/img/steve.jpg)
+
+---
+class: middle, top
+
+# "do you wanna stay in tonight, put on comfy pants, and <strong>do this neat .highlight[kernel tutorial]?<strong>"
+<br/>
+# circle one: yes no
+
+---
+class: middle, center
+
+# HECK .highlight[YES] I DO
+
+---
+class: middle, center
+
+# LET'S GET <strong>CLOSE TO THE .highlight[METAL]</strong>
+
+---
+class: middle, center
+
+# but wait...
+
+---
+class: middle, center
+
+# <strong>can</strong> .highlight[i] write an OS?
+
+---
+class: middle, center
+
+# .highlight[should] <strong>i</strong> write an OS?
+
+---
+class: middle, center
+
+![OSDevwiki](public/img/OSdevwiki.png)
+
+##### http://wiki.osdev.org/Required_Knowledge
+
+--
+
+.no[![no](public/img/no.gif)]
+
+---
+class: middle, center
+
+# "1. Basic Computer Science: You need to be <strong>intimately familiar with</strong> .highlight[hexadecimal] and binary notation..."
+
+##### http://wiki.osdev.org/Required_Knowledge
+
+--
+
+.no[![no](public/img/no.gif)]
+
+---
+class: middle, center
+
+# "5. Programming experience: .highlight[Learning] about programming with an OS project is <strong>considered a bad idea.</strong>"
+
+--
+
+.no[![no](public/img/no.gif)]
+
+---
+class: middle, center
+
+# "<strong>Failure to comply</strong> will make you look .highlight[silly]."
+
+--
+
+.no[![no](public/img/no.gif)]
+
+---
+class: middle, center
+
+# Phillip Opperman
+# <strong>Writing an OS in Rust</strong>
+# [os.phil-opp.com](os.phil-opp.com)
+
+---
+class: middle, center
+
+# <strong>I CAN OPERATING SYSTEM</strong> .highlight[AND SO CAN YOU]
+
+---
+class: middle, center
+
+![tweet](public/img/helloworldtweet.png)
+
+---
+class: middle, center
+
+# wat is .highlight[operating system]?
+
+---
+class: middle, center
+
+# An operating system is a <strong>program that provides a platform for other programs</strong>. It provides two things to these programs: .highlight[abstractions] and .highlight[isolation].
+
+##### http://intermezzos.github.io/book/what.html
+
+---
+class: middle, center
+
+# abstractions
+
+---
+class: middle, center
+
+![program-hardware](public/img/program_hardware.png)
+
+---
+class: middle, center
+
+![program-os-hardwares](public/img/program_os_hardware.png)
+
+---
+class: middle, center
+
+![program-vm-oss-hardwares](public/img/program_vm_os_hardware.png)
+
+---
+class: middle, left
+
+### We now have a pattern:
+
+- ## I have `A`.
+- ## `A` is written explicitly for `X`...
+- ## ... but I want to support `X` and `Y`,
+- ## <strong>so I put .highlight[abstraction] `B` in the middle.</strong>
+
+---
+class: middle, center
+
+# isolation
+
+---
+class: middle, top
+
+### <strong>intermezzo</strong> .subtitle[ |ˌin(t)ərˈmetsō|], noun
+## a light dramatic, musical, or other performance inserted between the acts of a play.
+
+---
+class: middle, center
+
+# wat is .highlight[kernel]?
+
+## the core component of an OS.
+
+##### http://intermezzos.github.io/book/what-kind-is-there.html
+
+---
+class: middle, center
+
+# what kind of OS?
+
+--
+<br/>
+
+# it .highlight[doesn't matter]
+
+---
+class: middle, center
+
+# "[W]e could waste a lot of time trying to design our perfect OS. <strong>And then never actually build it.</strong> Remember, .highlight[the goal here is to learn], not to make the best OS that ever existed."
+
+##### http://intermezzos.github.io/book/what-kind-are-we-making.html
+
+---
+class: middle, center
+
+# OK! let's try this out
+
+---
+class: middle, center
+
+# <strong>prerequisites</strong>
+
+- ## virtualization
+- ## linux dependencies
+- ## utilities (optional)
+
+---
+class: middle, left
+
+# <strong>virtualization</strong>
+.subtitle[(if you are on OSX, ChromeOS, Windows*, etc)]
+
+- ## [Vagrant](https://www.vagrantup.com/): development environment manager
+- ## [VirtualBox](https://www.virtualbox.org/): virtualizer
+- ## [XQuartz](http://www.xquartz.org/): X11 Graphics
+
+<br/>
+<br/>
+*new windows has Ubuntu! so you can also use that
+
+---
+class: middle, left
+
+# <strong>linux dependencies</strong>
+
+- ### `nasm`: assembler (assembly -> binary)
+- ### `ld`: linker (makes binary out of other files)
+- ### `grub`: creates the bootable iso
+- ### `xorriso`: req'd by grub, filesystem manipulator
+- ### `QEMU`: fake-computer emulator
+
+---
+class: middle, left
+
+# <strong>utilities</strong>
+#### .subtitle[you don't need these, but they are nice for viewing generated code.]
+
+- ## `hexdump`: allows you to view generated binary
+- ## `objdump`: a nicer viewer for `.o` files
+
+---
+class: middle, center
+
+# what happens when you turn on your computer
+
+---
+class: middle, left
+
+- ## 1. the <strong>hardware</strong> loads .highlight[BIOS] 
+  - ## .subtitle[<strong>B</strong>asic <strong>I</strong>nput <strong>O</strong>utput <strong>S</strong>ervice]
+- ## 2. <strong>BIOS</strong> loads .highlight[GRUB]
+  - ## .subtitle[<strong>G</strong>rand <strong>U</strong>nified <strong>B</strong>ootloader]
+- ## 3. <strong>GRUB</strong> loads our .highlight[kernel]
+
+---
+class: middle, left
+
+# <strong>linking</strong>
+
+- ### how the sections in the input files should be mapped into the output file
+- ### control the memory layout of the output file
+
+--
+
+## .highlight[make sure the header info is at the top]
+
+---
+class: middle, center
+
+# .highlight[DEMO TIME!]
+## hello world in <strong>assembly</strong>
+
+---
+class: middle, center
+
+# whoa wait what just happened
+
+---
+class: middle, left
+
+- ### the BIOS loads the bootloader (GRUB) from the virtual hard drive (the ISO)
+- ### the bootloader reads the kernel executable and finds the Multiboot header
+- ### it copies the `.boot` and `.text` sections to memory (to addresses `0x100000` and `0x100020`)
+- ### it jumps to the entry point (`0x100020`, you can obtain it through `objdump -f`)
+- ### our kernel prints the message and stops the CPU
+
+##### http://os.phil-opp.com/multiboot-kernel.html
+
+---
+class: middle, center
+
+# what comes .highlight[next]?
+
+---
+class: middle, center
+
+# jumping into <strong>longmode</strong>
+# 32 -> .highlight[64]
+
+--
+
+### this takes way too long to show right now
+
+---
+class: middle, center
+
+# (it's not <strong>Hard</strong>, so much as .highlight[Tedious])
+
+---
+class: middle, center
+
+# .highlight[DEMO TIME!]
+## hello world in <strong>rust</strong>
+
+---
+class: middle, center
+
+# whoa wait what just happened
+
+---
+class: middle, left
+
+- ### fill an array with bytes for the foreground/background color we want
+- ### write the ascii for the letters we want in every other item in the array
+- ### assign the array to a pointer, printing it to the screen
+
+---
+class: middle, left
+
+# i was told this code was .highlight[too complicated]
+
+--
+
+<br/>
+# whatever. it was <strong>so fun to write</strong>.
+
+---
+class: middle, center
+
+![guidon](public/img/guidon.jpg)
+
+---
+class: middle, center
+
+# .highlight[teaching] is nature's way of letting you know <strong>how</strong> .highlight[sloppy] <strong>your thinking is</strong>
+
+---
+class: middle, center
+
+## go write some <strong>irresponsible code</strong>
+
+--
+
+# and then .highlight[teach someone else] to do the same
+
+---
+class: middle, left
+
+# .highlight[contribute] to .title[intermezz]<strong>OS</strong>!
+
+--
+
+## .subtitle[we're only 9 months old!]
+
+---
+class: middle, left
+
+## the <strong>kernel</strong>
+
+- # 12 contributors
+- # 233 commits
+- # 444 github stars
+
+---
+class: middle, center
+
+# you .highlight[don't] have to <strong>contribute code</strong> to <strong>contribute</strong>
+
+---
+class: middle, left
+
+## the <strong>book</strong>
+
+- # 47 contributors
+- # 260 commits
+- # 184 github stars
+
+---
+class: center, middle
+
+# .highlight[contribute] to .title[intermezz]<strong>OS</strong>!
+
+--
+
+## .subtitle[whoever you are! we think you're great]
+
+---
+class: middle, center
+
+# "<strong>Failure to comply</strong> will make you look .highlight[silly]."
+
+--
+</br>
+# and that's a good thing.
+
+---
+class: middle, center
+
+# <strong>I CAN OPERATING SYSTEM</strong> .highlight[AND SO CAN YOU]
+
+---
+class: middle, left
+
+# <strong>thanks!</strong>
+<br/>
+- ### ashley williams, [@ag_dubs](https://twitter.com/ag_dubs)
+- ### [intermezzos.github.io/rustfest2016](http://intermezzos.github.io/rustfest2016)
+- ### [@intermezzOSrs](https://twitter.com/intermezzosrs), [intermezzos.github.io](https://intermezzos.github.io/)
+
+   </textarea>
+    <script src="public/remark.js" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+      var slideshow = remark.create();
+    </script>
+  </body>
+</html>

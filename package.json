@@ -1,0 +1,24 @@
+{
+  "name": "rustbeltrust2016",
+  "version": "1.0.0",
+  "description": "intermezzos presentation for rustfest 2016 conference in berlin",
+  "main": "index.js",
+  "dependencies": {
+    "live-server": "^1.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "live-server ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/intermezzOS/rustbeltrust2016.git"
+  },
+  "bugs": {
+    "url": "https://github.com/intermezzOS/rustbeltrust2016/issues"
+  },
+  "homepage": "https://github.com/intermezzOS/rustbeltrust2016#readme"
+}
