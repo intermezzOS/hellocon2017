@@ -528,28 +528,6 @@ class: middle, left
 ---
 class: middle, center
 
-# .highlight[DEMO TIME!]
-## hello world in <strong>assembly</strong>
-
----
-class: middle, center
-
-# whoa wait what just happened
-
----
-class: middle, left
-
-- ### the BIOS loads the bootloader (GRUB) from the virtual hard drive (the ISO)
-- ### the bootloader reads the kernel executable and finds the Multiboot header
-- ### it copies the `.boot` and `.text` sections to memory (to addresses `0x100000` and `0x100020`)
-- ### it jumps to the entry point (`0x100020`, you can obtain it through `objdump -f`)
-- ### our kernel prints the message and stops the CPU
-
-##### http://os.phil-opp.com/multiboot-kernel.html
-
----
-class: middle, center
-
 # what comes .highlight[next]?
 
 ---
@@ -562,34 +540,6 @@ class: middle, center
 class: middle, center
 
 ![longmode](public/img/longmode.png)
-
----
-class: middle, center
-
-# .highlight[DEMO TIME!]
-## hello world in <strong>rust</strong>
-
----
-class: middle, center
-
-# whoa wait what just happened
-
----
-class: middle, left
-
-- ### fill an array with bytes for the foreground/background color we want
-- ### write the ascii for the letters we want in every other item in the array
-- ### assign the array to a pointer, printing it to the screen
-
----
-class: middle, left
-
-# i was told this code was .highlight[too complicated]
-
---
-
-<br/>
-# whatever. it was <strong>so fun to write</strong>.
 
 ---
 class: middle, center
