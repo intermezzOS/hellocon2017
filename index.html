@@ -172,6 +172,45 @@ class: middle, center
 # wat is .highlight[operating system]?
 
 ---
+class: middle, left
+
+# Three definitions
+
+[Modern Operating Systems](https://www.amazon.com/Modern-Operating-Systems-Andrew-Tanenbaum/dp/013359162X):
+
+> It is hard to pin down what an operating system is other than saying it is
+> the software that runs in kernel mode—and even that is not always true. Part
+> of the problem is that operating systems perform two basically unrelated
+> functions: providing application programmers a clean abstract set of
+> resources instead of the messy hardware ones and managing these hardware
+> resources.
+
+---
+class: middle, left
+
+# Three definitions
+
+[Three Easy Pieces](http://pages.cs.wisc.edu/~remzi/OSTEP/):
+
+1. Virtualization
+2. Concurrency
+3. Persistence
+
+---
+class: middle, left
+
+# Three definitions
+
+[Exterminate All Operating System Abstractions](https://people.eecs.berkeley.edu/~brewer/cs262b/hotos-exokernel.pdf):
+
+> "software that securely multiplexes and abstracts physical resources"
+
+But, uh...
+
+> We believe that this denition specifically its view of the OS as an
+> abstractor of hardware, is crippling and wrong.
+
+---
 class: middle, center
 
 # An operating system is a <strong>program that provides a platform for other programs</strong>. It provides two things to these programs: .highlight[abstractions] and .highlight[isolation].
@@ -209,9 +248,19 @@ class: middle, left
 - ## <strong>so I put .highlight[abstraction] `B` in the middle.</strong>
 
 ---
+class: middle, left
+
+> Remember that all models are wrong; the practical
+> question is .highlight[how wrong do they have to be to not be useful].
+
+### George E. P. Box
+
+##### Box, G. E. P., and Draper, N. R., (1987), Empirical Model Building and Response Surfaces, John Wiley & Sons, New York, NY. p74.
+
+---
 class: middle, center
 
-# isolation
+# an operating system's job is to .highlight[lie]
 
 ---
 class: middle, top
@@ -255,34 +304,43 @@ class: middle, center
 
 # <strong>prerequisites</strong>
 
-- ## virtualization
+- ## up and running
 - ## linux dependencies
 - ## utilities (optional)
 
 ---
 class: middle, left
 
-# <strong>virtualization</strong>
-.subtitle[(if you are on OSX, ChromeOS, Windows*, etc)]
+# <strong>up and running</strong>
 
-- ## [Vagrant](https://www.vagrantup.com/): development environment manager
-- ## [VirtualBox](https://www.virtualbox.org/): virtualizer
-- ## [XQuartz](http://www.xquartz.org/): X11 Graphics
+![dev env](public/img/devenv.png)
 
-<br/>
-<br/>
-*new windows has Ubuntu! so you can also use that
+[https://twitter.com/_gsmith/status/585530735076966400](https://twitter.com/_gsmith/status/585530735076966400)
 
 ---
 class: middle, left
 
-# <strong>linux dependencies</strong>
+# <strong>up and running</strong>
+
+# how do you .highlight[even]?!
+
+---
+class: middle, left
+
+# <strong>dependencies</strong>
 
 - ### `nasm`: assembler (assembly -> binary)
 - ### `ld`: linker (makes binary out of other files)
 - ### `grub`: creates the bootable iso
 - ### `xorriso`: req'd by grub, filesystem manipulator
-- ### `QEMU`: fake-computer emulator
+- ### `QEMU`: emulator/virtualizer
+
+---
+class: middle, left
+
+![chorizo](public/img/chorizo.png)
+
+[https://twitter.com/ag_dubs/status/791725824667815936](https://twitter.com/ag_dubs/status/791725824667815936)
 
 ---
 class: middle, left
@@ -392,6 +450,12 @@ class: middle, left
 ---
 class: middle, center
 
+# .highlight[DEMO TIME!]
+## VGA driver in Rust
+
+---
+class: middle, center
+
 ![guidon](public/img/guidon.jpg)
 
 ---
@@ -409,7 +473,14 @@ class: middle, center
 # and then .highlight[teach someone else] to do the same
 
 ---
-class: middle, left
+class: center, middle
+
+![glitch](public/img/glitch.png)
+
+[https://twitter.com/ag_dubs/status/780041177949167616](https://twitter.com/ag_dubs/status/780041177949167616)
+
+---
+class: middle, center
 
 # .highlight[contribute] to .title[intermezz]<strong>OS</strong>!
 
@@ -420,11 +491,17 @@ class: middle, left
 ---
 class: middle, left
 
+# .highlight[contribute] to .title[intermezz]<strong>OS</strong>!
+## .subtitle[we're only 10 months old!]
+
+---
+class: middle, left
+
 ## the <strong>kernel</strong>
 
-- # 12 contributors
-- # 233 commits
-- # 444 github stars
+- # 15 contributors
+- # 286 commits
+- # 536 github stars
 
 ---
 class: middle, center
@@ -436,9 +513,9 @@ class: middle, left
 
 ## the <strong>book</strong>
 
-- # 47 contributors
-- # 260 commits
-- # 184 github stars
+- # 48 contributors
+- # 265 commits
+- # 198 github stars
 
 ---
 class: center, middle
@@ -469,7 +546,7 @@ class: middle, left
 # <strong>thanks!</strong>
 <br/>
 - ### ashley williams, [@ag_dubs](https://twitter.com/ag_dubs)
-- ### [intermezzos.github.io/rustfest2016](http://intermezzos.github.io/rustfest2016)
+- ### [intermezzos.github.io/rustbeltrust2016](http://intermezzos.github.io/rustbeltrust2016)
 - ### [@intermezzOSrs](https://twitter.com/intermezzosrs), [intermezzos.github.io](https://intermezzos.github.io/)
 
    </textarea>
