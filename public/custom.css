@@ -5,6 +5,14 @@ html, body {
   color: #333;
 }
 
+.bigger img {
+  width: 600px;
+}
+
+.reallybig {
+  font-size: 2.2em;
+}
+
 .subtitle {
   color: #949494;
 }
@@ -36,7 +44,7 @@ li {
   margin-left: 0.6em;
 }
 
-li > h2, li > p, li > h3 {
+li > h2, li > p, li > h3, li > h1 {
   display: inline;
 }
 
