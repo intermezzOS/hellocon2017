@@ -36,6 +36,10 @@ li {
   margin-left: 0.6em;
 }
 
+li > h2, li > p, li > h3 {
+  display: inline;
+}
+
 /* source */
 h5 {
   position: absolute;
