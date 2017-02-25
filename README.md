@@ -1,2 +1,2 @@
-# rustbeltrust2016
-intermezzos presentation for rustbeltrust 2016 conference in pittsburgh
+# hellocon2017
+intermezzos presentation for hellocon 2017 conference in toronto
