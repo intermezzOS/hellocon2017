@@ -8,17 +8,23 @@ pub mod panic;
 #[no_mangle]
 pub extern "C" fn kmain() -> ! {
     unsafe {
-        let rust = 0xb8180 as *mut u64;
-        *rust = 0x0254025302550252;
-
-        let belt = 0xb8360 as *mut u64;
-        *belt = 0x0254024c02450242;
+        let hell = 0xb8180 as *mut u64;
+        *hell = 0x026c026c02650268;
+      
+        let o = 0xb8188 as *mut u64;
+        *o = 0x026f;
 
         let wow = 0xb8298 as *mut u64;
         *wow = 0x0577056f0577;
 
-        let rust2 = 0xb8680 as *mut u64;
-        *rust2 = 0x0254025302550252;
+        let hell2 = 0xb8360 as *mut u64;
+        *hell2 = 0x024c024c02450248;
+
+        let o2 = 0xb8368 as *mut u64;
+        *o2 = 0x024f;
+
+        let con = 0xb8680 as *mut u64;
+        *con = 0x024e024f0243;
 
         let such = 0xb8750 as *mut u64;
         *such = 0x0568056305750573;
