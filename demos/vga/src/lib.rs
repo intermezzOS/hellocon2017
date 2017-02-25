@@ -29,6 +29,7 @@ impl<T: AsMut<[u8]>> Vga<T> {
     }
 
     pub fn flush(&mut self) {
+      // self.slice.as_mut().clone_from_slice(&self.buffer);
       panic!()
     }
 
